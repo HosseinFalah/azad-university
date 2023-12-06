@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root{
+      --color-primary: 37 99 235;
+    }
+    html {
+      font-family: "YekanBakh", system-ui, sans-serif;
+    }
+    body{
+      background: #F9F9F9;
+    }
+}
