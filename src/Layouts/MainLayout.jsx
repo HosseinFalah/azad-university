@@ -5,15 +5,13 @@ import { Navbar, Footer } from "../Components/index";
 
 const MainLayout = () => {
   return (
-    <>
+    <Suspense fallback={<Loading/>}>
       <Navbar/>
-      
-      <Suspense fallback={<Loading/>}>
-        <Outlet/>
-      </Suspense>
-      
+          
+      <Outlet/>
+          
       <Footer/>
-    </>
+    </Suspense>
   )
 }
 
