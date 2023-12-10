@@ -51,11 +51,11 @@ const Banner = () => {
             <SwiperSlide className="h-48 sm:h-64 md:h-auto xl:h-96">
                 <img src="/image/banner.jpg" className='w-full h-full object-cover' alt="بنر" />
             </SwiperSlide>
-            <div className="absolute bottom-5 right-10 z-10 flex items-center gap-x-2">
-                <button className='button-prev bg-white text-primary rounded-full drop-shadow-lg p-3.5 disabled:opacity-80'>
+            <div className="absolute bottom-3 md:bottom-5 right-5 md:right-10 z-10 flex items-center gap-x-2">
+                <button className='button-prev bg-white text-primary rounded-full drop-shadow-lg p-2 md:p-3.5 disabled:opacity-80'>
                     <IoIosArrowForward size={25}/>
                 </button>
-                <button className='button-next bg-white text-primary rounded-full drop-shadow-lg p-3.5 disabled:opacity-80'>
+                <button className='button-next bg-white text-primary rounded-full drop-shadow-lg p-2 md:p-3.5 disabled:opacity-80'>
                     <IoIosArrowBack size={25}/>
                 </button>
             </div>
