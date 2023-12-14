@@ -1,4 +1,5 @@
 import { Banner, Category, LastedCourses } from "../../Components";
+import LastedArticles from "../../Components/LastedArticles/LastedArticles";
 
 const Home = () => {
     return (
@@ -6,6 +7,7 @@ const Home = () => {
             <Banner/>
             <Category/>
             <LastedCourses/>
+            <LastedArticles/>
         </main>
     )
 }
