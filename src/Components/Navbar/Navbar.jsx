@@ -33,10 +33,10 @@ const Navbar = () => {
                             <SlBasketLoaded className="text-white" size={25}/>
                             <span className="absolute -top-3.5 -right-3 bg-red-600 text-white flex items-center justify-center w-7 h-7 rounded-full">0</span>
                         </button>
-                        <button className="bg-primary text-white p-4 flex items-center gap-x-3 rounded-lg drop-shadow-lg font-semibold">
+                        <Link to="/auth/login" className="bg-primary text-white p-4 flex items-center gap-x-3 rounded-lg drop-shadow-lg font-semibold">
                             <MdOutlineLogin className="text-white" size={25}/>
                             ورود و ثبت نام
-                        </button>
+                        </Link>
                     </div>
                     <button 
                         className="lg:hidden bg-primary p-4 rounded-lg drop-shadow-lg text-white" 
