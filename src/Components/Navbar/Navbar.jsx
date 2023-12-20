@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { MdLightMode } from "react-icons/md";
 import { SlBasketLoaded } from "react-icons/sl";
@@ -6,7 +7,7 @@ import { MdOutlineLogin } from "react-icons/md";
 import { MdMenu } from "react-icons/md";
 import { CgMenuLeft } from "react-icons/cg";
 import { FaHeadset } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Navbar = () => {
     const [isShowMenu, setIsShowMenu] = useState(false);
@@ -49,10 +50,16 @@ const Navbar = () => {
                     <ul className="flex items-center gap-x-4">
                         <li className="text-white font-medium cursor-pointer">خانه</li>
                         <li className="text-white font-medium cursor-pointer">دوره ها</li>
-                        <li className="text-white font-medium cursor-pointer">
-                            <Link to={`/teacher`}>
+                        <li className="text-white font-medium cursor-pointer group relative z-10">
+                            <Link to={`/`} className="flex items-center group gap-x-2">
                                 مدرسین
+                                <IoMdArrowDropdown size={20}/>
                             </Link>
+                            <ul className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 ease-in-out rounded-xl absolute bg-white text-zinc-700 w-48 p-2">
+                                <li className="transition-all duration-300 ease-in-out p-2 hover:bg-blue-400 rounded-xl hover:text-white">
+                                    <Link to={`/teacher/milad`}>میثم کلاهدوز</Link>
+                                </li>
+                            </ul>
                         </li>
                         <li className="text-white font-medium cursor-pointer">درباره انجمن</li>
                         <li className="text-white font-medium cursor-pointer">ارتباط با انجمن</li>
