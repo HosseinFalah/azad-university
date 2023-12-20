@@ -10,7 +10,7 @@ const Register = () => {
                 <form className="max-w-xl w-full bg-white drop-shadow-2xl rounded-2xl p-6 m-auto" autoComplete="off">
                     <div className="flex flex-col gap-y-4">
                         <h2 className="text-2xl xl:text-3xl font-semibold text-zinc-800">ثبت نام</h2>
-                        <Link to={`/auth/register`} className="font-medium text-zinc-600">از قبل حساب کاربری دارید؟<span className="text-primary font-semibold">ورود</span></Link>
+                        <Link to={`/auth/login`} className="font-medium text-zinc-600">از قبل حساب کاربری دارید؟<span className="text-primary font-semibold">ورود</span></Link>
                     </div>
                     <div className="flex flex-col gap-y-4 pt-5">
                         <label htmlFor="fullname" className="text-zinc-700 font-semibold text-lg">نام کاربری:</label>
