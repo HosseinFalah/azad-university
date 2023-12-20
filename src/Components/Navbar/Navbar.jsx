@@ -6,6 +6,7 @@ import { MdOutlineLogin } from "react-icons/md";
 import { MdMenu } from "react-icons/md";
 import { CgMenuLeft } from "react-icons/cg";
 import { FaHeadset } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isShowMenu, setIsShowMenu] = useState(false);
@@ -48,7 +49,11 @@ const Navbar = () => {
                     <ul className="flex items-center gap-x-4">
                         <li className="text-white font-medium cursor-pointer">خانه</li>
                         <li className="text-white font-medium cursor-pointer">دوره ها</li>
-                        <li className="text-white font-medium cursor-pointer">مدرسین</li>
+                        <li className="text-white font-medium cursor-pointer">
+                            <Link to={`/teacher`}>
+                                مدرسین
+                            </Link>
+                        </li>
                         <li className="text-white font-medium cursor-pointer">درباره انجمن</li>
                         <li className="text-white font-medium cursor-pointer">ارتباط با انجمن</li>
                     </ul>

@@ -42,7 +42,7 @@ const Card = () => {
                         </div>
                     </div>
                     <div className="grid mb-5">
-                        <button className="flex items-center justify-center gap-x-2.5 bg-primary transition-all duration-300 ease-in-out py-3 px-8 rounded-xl drop-shadow-2xl text-white focus:ring-2 ring-blue-800">
+                        <button className="flex items-center justify-center gap-x-2.5 bg-primary transition-all duration-300 ease-in-out py-3 px-8 rounded-xl drop-shadow-2xl text-white hover:ring-4 ring-blue-400">
                         مشاهده و خرید
                             <FiShoppingCart size={20}/>
                         </button>
