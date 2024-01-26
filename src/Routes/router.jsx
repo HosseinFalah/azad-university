@@ -6,6 +6,8 @@ const HomePage = lazy(() => import('./../Pages/Home/Home'));
 const TeacherPage = lazy(() => import('./../Pages/Teacher/Teacher'));
 const LoginPage = lazy(() => import('./../Pages/Auth/Login/Login'));
 const RegisterPage = lazy(() => import('./../Pages/Auth/Register/Register'));
+const ProductsPage = lazy(() => import('./../Pages/Products/Products'));
+const ProductDetailsPage = lazy(() => import('./../Pages/ProductDetails/ProductDetails'));
 
 const router = createBrowserRouter([
     {
@@ -15,7 +17,9 @@ const router = createBrowserRouter([
             {path: '/', element: <HomePage/>},
             {path: '/teacher/:shortName', element: <TeacherPage/>},
             {path: '/auth/login', element: <LoginPage/>},
-            {path: '/auth/register', element: <RegisterPage/>}
+            {path: '/auth/register', element: <RegisterPage/>},
+            {path: '/products', element: <ProductsPage/>},
+            {path: '/products/:shortName', element: <ProductDetailsPage/>},
         ]
     },
 ]);

@@ -49,7 +49,11 @@ const Navbar = () => {
                 <div className="max-w-screen-xl m-auto flex items-center justify-between">
                     <ul className="flex items-center gap-x-4">
                         <li className="text-white font-medium cursor-pointer">خانه</li>
-                        <li className="text-white font-medium cursor-pointer">دوره ها</li>
+                        <li className="text-white font-medium cursor-pointer">
+                            <Link to={`/products`}>
+                                دوره ها
+                            </Link>
+                        </li>
                         <li className="text-white font-medium cursor-pointer group relative z-10">
                             <Link to={`/`} className="flex items-center group gap-x-2">
                                 مدرسین

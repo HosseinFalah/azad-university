@@ -6,7 +6,7 @@ const Card = () => {
         <div className="w-full h-full pb-5 pt-14 lg:pb-7">
             <div className="relative flex flex-col h-full rounded-xl bg-gradient-to-tr from-purple-700 to-purple-400">
                 <Link
-                    to={`/courses`}
+                    to={`/products/1`}
                     className="flex w-full h-full flex-col px-4 lg:px-5"
                 >
                     <div className="relative -mt-14 flex w-full">
