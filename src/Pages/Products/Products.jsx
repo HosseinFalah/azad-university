@@ -7,7 +7,7 @@ const Products = () => {
     return (
         <main className="xl:max-w-screen-xl m-auto px-4 xl:px-0">
             <div className="grid grid-cols-12 gap-x-4 pt-8">
-                <aside className="col-span-3">
+                <aside className="col-span-12 md:col-span-4 lg:col-span-3">
                     <div className="relative bg-white drop-shadow-2xl rounded-xl p-4">
                         <input 
                             type="text"
@@ -104,8 +104,8 @@ const Products = () => {
                         </div>
                     </div>
                 </aside>
-                <div className="col-span-9">
-                    <div className="grid grid-cols-3 gap-x-4">
+                <div className="col-span-12 md:col-span-8 lg:col-span-9">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-4">
                         {[0, 1, 2, 3, 4, 5].map(product => (
                             <Card key={crypto.randomUUID()}/>
                         ))}
