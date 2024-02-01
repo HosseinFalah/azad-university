@@ -7,15 +7,12 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import { Card } from '../../Common';
+import { Card } from "src/Common";
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-// import required modules
-
 
 const Teacher = () => {
     return (
