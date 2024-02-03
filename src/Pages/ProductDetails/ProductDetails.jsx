@@ -10,8 +10,8 @@ const ProductDetails = () => {
       return (
         <main className="xl:max-w-screen-xl m-auto px-4 xl:px-0">
             <Breadcrumb/>
-            <div className="grid grid-cols-12 gap-x-4 pt-8">
-                <div className="col-span-6 bg-white p-6 py-8 rounded-xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-8">
+                <div className="bg-white p-6 py-8 rounded-xl">
                     <div className="space-y-8">
                         <h1 className="text-3xl font-medium">آموزش Next.js بصورت پروژه محور</h1>
                         <p className="leading-8 text-sm font-medium">NEXT.Js یا NEXT طی چندسال اخیر برای تکمیل و تقویت تکنولوژی React وارد میدون شد و سعی کرد تمام نواقص یا محدودیت های اون رو پوشش بده تا هیچ شک و شبهه ای در قدرت ری اکت برای طراحی صفحات وب باقی نمونه. به عبارتی اومده تا با ویژگی فول استک بودن، React رو فراتر از یک تکنولوژی فرانت اند جا بندازه و از طریق ترکیب اون با Node Js در بک اند، به شما کمک کنه یک پروژه کامل و صفر تا صد وب رو به بهترین شکل طراحی و پیاده سازی کنید.</p>
@@ -27,7 +27,7 @@ const ProductDetails = () => {
                         </button>
                     </div>
                 </div>
-                <div className="col-span-6 bg-white rounded-xl overflow-hidden">
+                <div className="bg-white rounded-xl overflow-hidden">
                     <Plyr
                         source={{
                             type: 'video',
@@ -38,7 +38,7 @@ const ProductDetails = () => {
                 </div>
             </div>
             <section className="grid grid-cols-12 py-8 gap-10">
-                <div className="col-span-9 space-y-8">
+                <div className="col-span-12 lg:col-span-9 order-last lg:order-first space-y-8">
                     <div className="bg-white p-8 rounded-xl">
                         <h3 className="text-2xl font-black">توضیحات</h3>
                         <div className="my-8">
@@ -74,7 +74,7 @@ const ProductDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-3">
+                <div className="col-span-12 lg:col-span-3">
                     <div className="bg-white rounded-xl p-6">
                         <div className="space-y-2">
                             <img 
