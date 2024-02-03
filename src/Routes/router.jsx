@@ -7,7 +7,8 @@ const TeacherPage = lazy(() => import('./../Pages/Teacher/Teacher'));
 const LoginPage = lazy(() => import('./../Pages/Auth/Login/Login'));
 const RegisterPage = lazy(() => import('./../Pages/Auth/Register/Register'));
 const ProductsPage = lazy(() => import('./../Pages/Products/Products'));
-const ProductDetailsPage = lazy(() => import('./../Pages/ProductDetails/ProductDetails'));
+// const ProductDetailsPage = lazy(() => import('./../Pages/ProductDetails/ProductDetails'));
+import { ProductDetails } from "src/Pages";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
             {path: '/auth/login', element: <LoginPage/>},
             {path: '/auth/register', element: <RegisterPage/>},
             {path: '/products', element: <ProductsPage/>},
-            {path: '/products/:shortName', element: <ProductDetailsPage/>},
+            {path: '/products/:shortName', element: <ProductDetails/>},
         ]
     },
 ]);
